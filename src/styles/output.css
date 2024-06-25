@@ -1,0 +1,117 @@
+
+/* Global Reset */
+@tailwind base;
+
+/* Container */
+@tailwind container;
+
+/* Header */
+@tailwind components;
+@tailwind utilities;
+
+/* Navigation Menu */
+@tailwind components;
+@tailwind utilities;
+
+/* Footer */
+@tailwind components;
+@tailwind utilities;
+
+/* Product Card */
+.product-card {
+  @apply border border-gray-300 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300;
+}
+
+.product-card img {
+  @apply w-full h-64 object-cover rounded-t-lg;
+}
+.w-36 {
+  width: 26rem;
+  display: flex;
+}
+
+.product-card h3 {
+  @apply text-lg font-semibold text-gray-800 mt-2;
+}
+
+.product-card p {
+  @apply text-sm text-gray-600 mb-2;
+}
+
+.product-card button {
+  @apply bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mt-2 transition duration-300;
+}
+
+.product-card button:hover {
+  @apply bg-blue-600;
+}
+
+/* Cart Page */
+.cart-page {
+  @apply mt-8;
+}
+
+.cart-item {
+  @apply flex items-center justify-between border-b border-gray-300 py-2;
+}
+
+.cart-item:last-child {
+  @apply border-b-0;
+}
+
+.cart-item .item-details {
+  @apply flex-1;
+}
+
+.cart-item h3 {
+  @apply text-lg font-semibold text-gray-800;
+}
+
+.cart-item p {
+  @apply text-sm text-gray-600;
+}
+
+.cart-item button {
+  @apply text-red-500 hover:text-red-600 transition duration-300;
+}
+
+/* Thank You Page */
+.thank-you-page {
+  @apply mt-8 text-center;
+}
+
+.thank-you-page h2 {
+  @apply text-3xl font-semibold text-gray-800 mb-4;
+}
+
+.thank-you-page p {
+  @apply text-lg text-gray-600;
+}
+
+/* Product Listing Page */
+.product-listing-page {
+  @apply mt-8;
+}
+
+.product-listing-page h2 {
+  @apply text-3xl font-semibold text-gray-800 mb-4;
+}
+
+.pagination {
+  @apply flex justify-center mt-4;
+}
+
+.pagination button {
+  @apply px-4 py-2 mx-1 rounded transition duration-300;
+}
+
+.pagination button:hover {
+  @apply bg-blue-500 text-white shadow-md;
+}
+
+.pagination button.active {
+  @apply bg-blue-500 text-white shadow-md;
+}
+
+/* Responsive Utilities */
+@tailwind screens;
